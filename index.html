@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive SVG Drawing App</title>
+        <!-- Link to external CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>SVG Drawing App</h1>
+        
+        <div class="controls">
+            <label for="rawSVGInput">Enter raw SVG code:</label><br />
+            <textarea id="rawSVGInput" rows="10" cols="50"></textarea><br />
+            <button id="renderSVG">Render SVG</button>
+          </div>
+
+
+        <!-- Controls for drawing shapes -->
+        <div class="controls">
+            <button id="drawCircle">Draw Circle</button>
+            <button id="drawRect">Draw Rectangle</button>
+            <button id="drawEllipse">Draw Ellipse</button>
+            <button id="drawPolyline">Draw Polyline</button>
+            <button id="drawLine">Draw Line</button>
+
+
+        </div>
+
+        <!-- SVG canvas where shapes will be drawn -->
+        <svg id="svgCanvas" width="600" height="400"></svg>
+
+        <!-- Link to external JavaScript file -->
+        <script src="script.js"></script>
+
+    </body>
+</html>
